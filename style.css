@@ -1,0 +1,201 @@
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-bottom: 10px;
+}
+header{
+	width: 100%;
+	display: flex;
+	background: #b20000;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+div{
+	border-radius: 20px;
+	margin: 5px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+	margin-bottom: 0;
+}
+h1{
+	color: #FFFFFF;
+}
+p{
+	color: #FFFFFF;
+}
+h3{
+	color: #FFFFFF;
+}
+#logo{
+	height: 100px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#navigator{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+}
+.navigpart{
+	border: 1px solid lightgray;
+	margin: 10px;
+	margin-bottom: 0;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+#aboutnav{
+	width: 105px;
+}
+#pricenav{
+	width: 180px;
+}
+#ordernav{
+	width: 195px;
+}
+.navig{
+	text-decoration: none;
+	color: #CCCCCC;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.navig:hover{
+	text-decoration: none;
+	color: #000000;
+	background-color: lightblue;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.navig:active{
+	text-decoration: none;
+	color: #000000;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+#companyname{
+	margin-left: 0;
+	margin-right: 20%;
+	font-size: 45px;
+}
+#about{
+	background: #600001;
+	display: flex;
+	flex-direction: column;
+}
+#abouth1{
+	margin-right: auto;
+	margin-left: auto;
+}
+#aboutp{
+	font-size: 25px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+#prices{
+	background: #A0171C;
+	display: flex;
+	flex-direction: column;
+}
+#priceh1{
+	margin-left: auto;
+	margin-right: auto;
+}
+#pricelist{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+}
+.priceitem{
+	font-size: 20px;
+	text-align: center;
+	width: 32%;
+	background: #303030;
+	margin-bottom: 10px;
+}
+#order{
+	background: #600001;
+	display: flex;
+	flex-direction: column;
+}
+#orderh1{
+	margin-right: auto;
+	margin-left: auto;
+}
+#orderp{
+	font-size: 25px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.abutton{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 30px;
+}
+.priceimg{
+	width: 95%;
+	margin-bottom: 15px;
+}
+.buttona{
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: #FFFFFF;
+	background: #111111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 5px;
+}
+.buttona:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.buttona:active {
+    color: #000
+}
+.buttona:active:after {
+    background: transparent;
+}
+.buttona:hover:before {
+    opacity: 1;
+}
+.buttona:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
